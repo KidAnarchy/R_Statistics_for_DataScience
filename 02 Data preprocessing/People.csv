@@ -1,0 +1,6 @@
+age,agegroup,height,status,yearsmarried
+1,21,adult,150,single,-1
+2,2,child,120,married,0
+3,18,adult,165,married,20
+4,221,elderly,135,widowed,2
+5,34,child,-134,married,3

@@ -1,0 +1,38 @@
+#--------------------------------------------------------
+#          Data Inconsitency 3
+#------------------------------------------------------
+
+# Import Library
+# install.packages("editrules")
+# install.packages ("igraph")
+library (editrules)
+
+# Import data
+people <-read.csv("people.csv")
+
+
+#Create rule in text file:
+#numerical rules
+#age >= 0
+#height > 0
+#age <= 150
+#age >yearsmarried
+#categorical rules
+
+#status %in% c("married", "single", "widowed")
+#agegroup %in% c(" child","adult","elderly ")
+#if(status == "married")agegroup %in% c("adult","elderly")
+
+#mixed rules
+
+#if (status %in% c("married", "widowed")) age-yearsmarried >= 17
+#if (age < 18)agegroup == "child"
+#if (age >= 18 && age < 65)agegroup == "adult"
+#if (age >= 65)agegroup == "elderly"
+
+#Then, execute these commands:
+E <-editfile("rule.txt")
+ve<-violatedEdits(E,people)
+ve                                                    
+
+#---------------------------------------------------------------

@@ -1,0 +1,6 @@
+gender age  height
+Fem       20    158
+Male      42    160*
+M           18    165
+Female   21    NA
+Fem.       30    155	
